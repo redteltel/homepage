@@ -2,7 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 export const getAIResponse = async (userMessage: string, history: { role: string; parts: { text: string }[] }[]) => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
   if (!apiKey || apiKey === "undefined" || apiKey === "") {
     return "ただいま準備中で手が離せんとです。お急ぎの際はお電話（0969-24-0218）くださいばい！";
