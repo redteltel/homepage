@@ -1,0 +1,5 @@
+*.json
+!metadata.json
+!package.json
+.next/
+node_modules/
