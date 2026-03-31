@@ -31,7 +31,8 @@ const Hero: React.FC<HeroProps> = ({ onScrollToServices, onOpenConsultant, curre
             「困った」を、<br />
             <span className="text-blue-600">「良かった」</span>に。<br />
             <span className="text-2xl md:text-5xl block mt-6 font-bold text-gray-800 tracking-tight font-sans">
-              街のでんきやさん、パナランドフクシマです。
+              街のでんきやさん、パナランドフクシマです。<br />
+              <span className="text-lg md:text-2xl text-gray-500 mt-2 block">(旧パナランドヨシダ)</span>
             </span>
           </h1>
 

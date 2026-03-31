@@ -11,7 +11,7 @@ interface AIConsultantProps {
 
 const AIConsultant: React.FC<AIConsultantProps> = ({ onClose, currentCharImage, initialMessage }) => {
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'いらっしゃいませ！パナランドフクシマ店主（AI）です。天草の暮らしに合わせて、家電の修理からお家のリフォームまで何でもお答えしますばい！' }
+    { role: 'model', text: 'いらっしゃいませ！パナランドフクシマ (旧パナランドヨシダ) 店主（AI）です。天草の暮らしに合わせて、家電の修理からお家のリフォームまで何でもお答えしますばい！' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);

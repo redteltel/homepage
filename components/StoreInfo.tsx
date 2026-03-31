@@ -18,7 +18,10 @@ const StoreInfo: React.FC<StoreInfoProps> = ({ onNavigateStore }) => {
           {/* Info Card */}
           <div className="lg:w-1/3 space-y-6">
             <div className="bg-[#000f9f] text-white p-8 rounded-3xl shadow-xl h-full flex flex-col justify-center">
-              <h4 className="text-2xl font-black mb-8 border-b border-white/20 pb-4 tracking-tighter">パナランドフクシマ</h4>
+              <h4 className="text-2xl font-black mb-8 border-b border-white/20 pb-4 tracking-tighter flex flex-col">
+                <span>パナランドフクシマ</span>
+                <span className="text-sm font-normal opacity-80 mt-1">(旧パナランドヨシダ)</span>
+              </h4>
               
               <div className="space-y-8">
                 <div>

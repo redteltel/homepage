@@ -49,6 +49,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, onScrollTo, currentView }) 
           <a href="/" onClick={handleLogoClick} className="flex flex-col relative z-50 cursor-pointer">
             <div className="flex items-baseline">
               <span className={`text-2xl md:text-3xl font-black tracking-tighter font-maru transition-colors duration-300 ${(isScrolled || currentView !== 'home' || isMobileMenuOpen) ? 'text-[#000f9f]' : 'text-[#000f9f] md:text-white'}`}>パナランドフクシマ</span>
+              <span className={`ml-2 text-xs md:text-sm font-bold transition-colors duration-300 ${(isScrolled || currentView !== 'home' || isMobileMenuOpen) ? 'text-gray-500' : 'text-gray-500 md:text-white/80'}`}>(旧パナランドヨシダ)</span>
             </div>
             <span className={`text-[10px] font-black tracking-[0.3em] uppercase transition-colors duration-300 ${(isScrolled || currentView !== 'home' || isMobileMenuOpen) ? 'text-blue-600' : 'text-blue-600 md:text-white/80'}`}>Panasonic Shop</span>
           </a>

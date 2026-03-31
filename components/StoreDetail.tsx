@@ -72,7 +72,7 @@ const StoreDetail: React.FC<StoreDetailProps> = ({ onBack }) => {
               <div className="space-y-8">
                 <div className="flex border-b border-gray-100 pb-4">
                   <span className="w-32 font-black text-gray-400 text-xs uppercase tracking-widest">店名</span>
-                  <span className="font-bold text-gray-900">パナランドフクシマ</span>
+                  <span className="font-bold text-gray-900">パナランドフクシマ (旧パナランドヨシダ)</span>
                 </div>
                 <div className="flex border-b border-gray-100 pb-4">
                   <span className="w-32 font-black text-gray-400 text-xs uppercase tracking-widest">所在地</span>

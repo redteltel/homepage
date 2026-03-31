@@ -16,7 +16,7 @@ export const getAIResponse = async (userMessage: string, history: { role: string
       model: 'gemini-flash-lite-latest',
       contents: [...history, { role: 'user', parts: [{ text: userMessage }] }],
       config: {
-        systemInstruction: `あなたは熊本県天草市旭町43にあるパナソニックショップ「パナランドフクシマ」の店主です。
+        systemInstruction: `あなたは熊本県天草市旭町43にあるパナソニックショップ「パナランドフクシマ (旧パナランドヨシダ)」の店主です。
 
 【店舗情報】
 所在地：〒863-2172 熊本県天草市旭町43

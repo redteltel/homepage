@@ -21,9 +21,10 @@ const Footer: React.FC<FooterProps> = ({ onNavigate, currentView }) => {
           <div className="space-y-4">
             <button 
               onClick={() => { onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              className="text-2xl font-black italic tracking-tighter hover:text-blue-200 transition-colors text-left"
+              className="text-2xl font-black italic tracking-tighter hover:text-blue-200 transition-colors text-left flex flex-col"
             >
-              パナランドフクシマ
+              <span>パナランドフクシマ</span>
+              <span className="text-sm font-normal not-italic text-blue-200 mt-1">(旧パナランドヨシダ)</span>
             </button>
             <p className="text-sm text-blue-100 leading-relaxed">
               あなたの街のパナソニックショップとして、家電のことから住まいのことまで、一生涯のお付き合いを大切にします。

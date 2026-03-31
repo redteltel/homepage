@@ -52,12 +52,12 @@ const ContactDetail: React.FC<ContactDetailProps> = ({ onBack }) => {
   };
 
   const copyToClipboard = () => {
-    const text = `【パナランドフクシマ お問い合わせ】\nお名前：${formData.name}\n返信先メール：${formData.email}\nご連絡先電話：${formData.contact}\n内容：\n${formData.message}`;
+    const text = `【パナランドフクシマ (旧パナランドヨシダ) お問い合わせ】\nお名前：${formData.name}\n返信先メール：${formData.email}\nご連絡先電話：${formData.contact}\n内容：\n${formData.message}`;
     navigator.clipboard.writeText(text);
     alert("コピーしました！");
   };
 
-  const mailSubject = encodeURIComponent("【問い合わせ】パナランドフクシマ");
+  const mailSubject = encodeURIComponent("【問い合わせ】パナランドフクシマ (旧パナランドヨシダ)");
   const mailBody = encodeURIComponent(`お名前：${formData.name}\n返信先メール：${formData.email}\nご連絡先電話：${formData.contact}\n内容：\n${formData.message}`);
 
   if (status === 'success') {
